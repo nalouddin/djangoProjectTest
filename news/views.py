@@ -8,4 +8,5 @@ def HomeView(request):
     context = {
         'news': news,
     }
-    return render(request, 'home.html', context)
+    title = 'Yangliklar saiti'
+    return render(request, 'news/home.html', context)
